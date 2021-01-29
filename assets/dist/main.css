@@ -2,6 +2,7 @@
 @import url("style.css");
 :root {
   --main-color: #FA6400;
+  --main-colorHover: #fa8d44;
 }
 
 .banner img {
@@ -117,7 +118,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 80px 50px;
+  padding: 0 75px 50px;
   text-align: center;
 }
 .section-three .sec-3__content h2 {
@@ -127,6 +128,7 @@
 .section-three .sec-3__content p {
   font-size: 20px;
   line-height: 30.48px;
+  font-weight: 600;
 }
 .section-four h2 {
   font-weight: 800;
@@ -134,7 +136,7 @@
   color: #fff;
   justify-content: center;
   align-items: center;
-  height: 87px;
+  height: 74px;
   display: flex;
   margin-bottom: 0;
   position: relative;
@@ -149,6 +151,169 @@
   background-color: #fff;
   margin: 0 80px;
 }
+.section-four .sec-4__product--content {
+  text-align: center;
+  margin: 0 55px;
+  line-height: 20px;
+}
+.section-four .sec-4__product--content h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.section-four .sec-4__product--content p {
+  font-weight: 500;
+}
+.section-four .sec-4__product--content button {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 8px 20px;
+  margin: 4px 0 6px;
+  transition: 0.4s;
+}
+.section-four .sec-4__product--content button:hover {
+  color: #fff;
+  background-color: var(--main-colorHover);
+}
+.section-five h2 {
+  position: relative;
+  transform: rotate(-90deg) translate(-202px, -260px);
+  z-index: 1;
+  font-size: 60px;
+  color: #ffffff80;
+  letter-spacing: 15px;
+  font-weight: 800;
+}
+.section-five .sec-5__product:first-child {
+  padding-left: 10px;
+}
+.section-five .sec-5__product:last-child {
+  padding-right: 10px;
+}
+.section-five .sec-5__bg img {
+  position: absolute;
+  width: 49.2%;
+}
+.section-five .sec-5__content {
+  position: relative;
+  background-color: #fff;
+  width: 86.7%;
+  height: 92%;
+  margin-left: 80px;
+  margin-top: -99px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.section-five .sec-5__content h3 {
+  font-weight: 800;
+  font-size: 30px;
+}
+.section-five .sec-5__content p {
+  font-weight: 500;
+  font-size: 22px;
+}
+.section-six .sec-6__product:first-child {
+  padding-left: 10px;
+}
+.section-six .sec-6__product:last-child {
+  background-color: #F6F6F6;
+  width: 49.2%;
+}
+.section-six .sec-6__content {
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+  width: 87.5%;
+  height: 88%;
+  margin: 20px 0 0 35px;
+  padding-right: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.section-six .sec-6__content h3 {
+  font-weight: 800;
+}
+.section-six .sec-6__content p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.section-six .sec-6__bg img {
+  position: absolute;
+  bottom: 18px;
+  right: 30px;
+  width: 40%;
+}
+.section-seven {
+  height: 540px;
+}
+.section-seven .container {
+  overflow: hidden;
+}
+.section-seven .sec-7__bg img:first-child {
+  position: absolute;
+  width: 1200px;
+  height: 430px;
+  margin-top: 50px;
+}
+.section-seven .sec-7__bg img:last-child {
+  position: relative;
+  height: 430px;
+  width: 100%;
+  margin-top: 50px;
+}
+.section-seven .sec-7__img {
+  height: 0;
+}
+.section-seven .sec-7__img img {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  top: -480px;
+  left: 130px;
+}
+.section-seven .sec-7__play {
+  text-align: center;
+  transform: translateY(-18rem);
+  z-index: 1;
+  position: relative;
+}
+.section-eight {
+  margin-top: 50px;
+}
+.section-eight .sec-8 {
+  text-align: center;
+  margin: 0 185px;
+}
+.section-eight .sec-8 h3 {
+  font-weight: 800;
+}
+.section-eight .sec-8 p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.section-eight .sec-8 p:first-child {
+  margin-bottom: 10px;
+}
+.section-eight .sec-8 button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+.section-eight .sec-8 button:hover {
+  background-color: var(--main-colorHover);
+}
 .section-one, .section-two, .section-three, .section-four, .section-five, .section-six, .section-seven, .section-eight {
   margin-top: 33px;
+}
+
+.section-four .sec-4__product--content button, .section-eight .sec-8 button {
+  color: #fff;
+  background-color: var(--main-color);
 }

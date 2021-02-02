@@ -1,10 +1,11 @@
 //Responsive
-@import url('respon.css');
-@import url('style.css');
+@import '_respon';
 
-:root {
-    --main-color: #FA6400;
-    --main-colorHover: #fa8d44;
+$main-color: #FA6400;
+$main-colorHover: #fa8d44;
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .banner {
@@ -161,7 +162,7 @@
                 background: #e26135;
                 background: linear-gradient(135deg, #de420c 0%, #f9650a 33%, #fbb84a 66%, #f9da66 100%);
                 width: 1200px;
-                height: 550px;
+                height: 575px;
             }
             &__product {
                 background-color: #fff;
@@ -188,7 +189,7 @@
                         @extend %color-btn;
                         &:hover {
                             color: #fff;
-                            background-color: var(--main-colorHover);
+                            background-color: $main-colorHover;
                         }
                     }
                 }
@@ -218,7 +219,7 @@
                 width: 49.3%;
                 height: 100%;
                 position: absolute;
-                background: linear-gradient(135deg, rgb(229 100 52) 0%, rgb(251 128 51) 25%, rgb(252 160 74) 60%, rgb(251 198 106) 75%, rgb(250 224 131) 100%);
+                background: linear-gradient(135deg, #e56434 0%, #fb8033 25%, #fca04a 60%, #fbc66a 75%, #fae083 100%);
             }
             &__content {
                 position: relative;
@@ -347,7 +348,7 @@
                 margin: 15px 0;
                 @extend %color-btn;
                 &:hover {
-                    background-color: var(--main-colorHover);
+                    background-color: $main-colorHover;
                 }
             }
         }
@@ -367,5 +368,5 @@
 //Extend
 %color-btn{
     color: #fff;
-    background-color: var(--main-color);
+    background-color: $main-color;
 }

@@ -103,12 +103,40 @@ $main-colorHover: #fa8d44;
             }
             &__img {
                 height: 100%;
-                transform: translateX(703px);
+                //transform: translateX(703px);
             }
             &__animation {
-                transition: transform 1s linear;
-                transform: translateX(0);
+                //Animation
+                opacity: 0;
+                -moz-transition: all 1000ms ease-out;
+                -webkit-transition: all 1000ms ease-out;
+                -o-transition: all 1000ms ease-out;
+                transition: all 1000ms ease-out;
+                -moz-transform: translate3d(100px, 0px, 0px);
+                -webkit-transform: translate3d(100px, 0px, 0px);
+                -o-transform: translate(100px, 0px);
+                -ms-transform: translate(100px, 0px);
+                transform: translate3d(100px, 0px, 0px);
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                backface-visibility: hidden;
+                &-default {
+                    //transition: transform 1s linear;
+                    //transform: translateX(0);
+                    //Animation
+                    opacity: 1;
+                    -moz-transform: translate3d(0px, 0px, 0px);
+                    -webkit-transform: translate3d(0px, 0px, 0px);
+                    -o-transform: translate(0px, 0px);
+                    -ms-transform: translate(0px, 0px);
+                    transform: translate3d(0px, 0px, 0px);
+                    -moz-transition: all 1000ms ease-out;
+                    -webkit-transition: all 1000ms ease-out;
+                    -o-transition: all 1000ms ease-out;
+                    transition: all 1000ms ease-out;
+                }
             }
+            //&__animation
         }
     }
     &-three {
@@ -124,11 +152,40 @@ $main-colorHover: #fa8d44;
             }
             &__img {
                 margin-bottom: -78px;
-                transform: translateX(-650px);
+                //transform: translateX(-650px);
             }
             &__animation {
-                transition: transform 1s linear;
-                transform: translateX(0);
+                //transition: transform 1s linear;
+                //transform: translateX(0);
+                //Animation
+                opacity: 0;
+                -moz-transition: all 1000ms ease-out;
+                -webkit-transition: all 1000ms ease-out;
+                -o-transition: all 1000ms ease-out;
+                transition: all 1000ms ease-out;
+                -moz-transform: translate3d(-100px, 0px, 0px);
+                -webkit-transform: translate3d(-100px, 0px, 0px);
+                -o-transform: translate(-100px, 0px);
+                -ms-transform: translate(-100px, 0px);
+                transform: translate3d(-100px, 0px, 0px);
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                backface-visibility: hidden;
+                &-default {
+                    //transition: transform 1s linear;
+                    //transform: translateX(0);
+                    //Animation
+                    opacity: 1;
+                    -moz-transform: translate3d(0px, 0px, 0px);
+                    -webkit-transform: translate3d(0px, 0px, 0px);
+                    -o-transform: translate(0px, 0px);
+                    -ms-transform: translate(0px, 0px);
+                    transform: translate3d(0px, 0px, 0px);
+                    -moz-transition: all 1000ms ease-out;
+                    -webkit-transition: all 1000ms ease-out;
+                    -o-transition: all 1000ms ease-out;
+                    transition: all 1000ms ease-out;
+                }
             }
             &__img,
             &__content {
@@ -214,13 +271,43 @@ $main-colorHover: #fa8d44;
             color: #ffffff80;
             letter-spacing: 15px;
             font-weight: 800;
-            transform: rotate(-90deg) translate(-738px, -260px);
-            opacity: 0;
+            //transform: rotate(-90deg) translate(-738px, -260px);
+            //opacity: 0;
         }
-        .h1st__animation {
-            transform: rotate(-90deg) translate(-202px, -260px);
-            opacity: 1;
-            transition: transform 1s linear;
+        .h1st {
+            &__animation {
+                // transform: rotate(-90deg) translate(-202px, -260px);
+                // opacity: 1;
+                // transition: transform 1s linear;
+                opacity: 0;
+                -moz-transition: all 1000ms ease-out;
+                -webkit-transition: all 1000ms ease-out;
+                -o-transition: all 1000ms ease-out;
+                transition: all 1000ms ease-out;
+                -moz-transform: rotate(-90deg) translate3d(-738px, -260px, 0px);
+                -webkit-transform: rotate(-90deg) translate3d(-738px, -260px, 0px);
+                -o-transform: rotate(-90deg) translate(-738px, -260px);
+                -ms-transform: rotate(-90deg) translate(-738px, -260px);
+                transform: rotate(-90deg) translate3d(-738px, -260px, 0px);
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                backface-visibility: hidden;
+                &-default {
+                    //transition: transform 1s linear;
+                    //transform: translateX(0);
+                    //Animation
+                    opacity: 1;
+                    -moz-transform: rotate(-90deg)translate3d(-202px, -260px, 0px);
+                    -webkit-transform: rotate(-90deg) translate3d(-202px, -260px, 0px);
+                    -o-transform: rotate(-90deg) translate(-202px, -260px);
+                    -ms-transform: rotate(-90deg) translate(-202px, -260px);
+                    transform: rotate(-90deg) translate3d(-202px, -260px, 0px);
+                    -moz-transition: all 1000ms ease-out;
+                    -webkit-transition: all 1000ms ease-out;
+                    -o-transition: all 1000ms ease-out;
+                    transition: all 1000ms ease-out;
+                }
+            }
         }
         .sec-5 {
             &__product {

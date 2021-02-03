@@ -103,6 +103,11 @@ $main-colorHover: #fa8d44;
             }
             &__img {
                 height: 100%;
+                transform: translateX(703px);
+            }
+            &__animation {
+                transition: transform 1s linear;
+                transform: translateX(0);
             }
         }
     }
@@ -119,6 +124,11 @@ $main-colorHover: #fa8d44;
             }
             &__img {
                 margin-bottom: -78px;
+                transform: translateX(-650px);
+            }
+            &__animation {
+                transition: transform 1s linear;
+                transform: translateX(0);
             }
             &__img,
             &__content {
@@ -197,14 +207,20 @@ $main-colorHover: #fa8d44;
         }
     }
     &-five {
-        h2 {
+        h1 {
             position: relative;
-            transform: rotate(-90deg) translate(-202px, -260px);
             z-index: 1;
             font-size: 60px;
             color: #ffffff80;
             letter-spacing: 15px;
             font-weight: 800;
+            transform: rotate(-90deg) translate(-738px, -260px);
+            opacity: 0;
+        }
+        .h1st__animation {
+            transform: rotate(-90deg) translate(-202px, -260px);
+            opacity: 1;
+            transition: transform 1s linear;
         }
         .sec-5 {
             &__product {

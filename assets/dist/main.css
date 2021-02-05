@@ -487,29 +487,13 @@
 }
 .section-two .sec-2__animation {
   opacity: 0;
-  -moz-transition: all 1000ms ease-out;
-  -webkit-transition: all 1000ms ease-out;
-  -o-transition: all 1000ms ease-out;
   transition: all 1000ms ease-out;
-  -moz-transform: translate3d(100px, 0px, 0px);
-  -webkit-transform: translate3d(100px, 0px, 0px);
-  -o-transform: translate(100px, 0px);
-  -ms-transform: translate(100px, 0px);
   transform: translate3d(100px, 0px, 0px);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .section-two .sec-2__animation-default {
   opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
-  -moz-transition: all 1000ms ease-out;
-  -webkit-transition: all 1000ms ease-out;
-  -o-transition: all 1000ms ease-out;
   transition: all 1000ms ease-out;
 }
 .section-three .sec-3__bg {
@@ -526,29 +510,13 @@
 }
 .section-three .sec-3__animation {
   opacity: 0;
-  -moz-transition: all 1000ms ease-out;
-  -webkit-transition: all 1000ms ease-out;
-  -o-transition: all 1000ms ease-out;
   transition: all 1000ms ease-out;
-  -moz-transform: translate3d(-100px, 0px, 0px);
-  -webkit-transform: translate3d(-100px, 0px, 0px);
-  -o-transform: translate(-100px, 0px);
-  -ms-transform: translate(-100px, 0px);
   transform: translate3d(-100px, 0px, 0px);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .section-three .sec-3__animation-default {
   opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
-  -moz-transition: all 1000ms ease-out;
-  -webkit-transition: all 1000ms ease-out;
-  -o-transition: all 1000ms ease-out;
   transition: all 1000ms ease-out;
 }
 .section-three .sec-3__img, .section-three .sec-3__content {
@@ -790,4 +758,26 @@
 .section-four .sec-4__product--content button, .section-eight .sec-8 button {
   color: #fff;
   background-color: #FA6400;
+}
+
+.sec__animation {
+  opacity: 0;
+  backface-visibility: hidden;
+  transition: all 1000ms ease-out;
+}
+.sec__animation--bottom {
+  transform: translate3d(0px, 100px, 0px);
+}
+.sec__animation--top {
+  transform: translate3d(0px, -100px, 0px);
+}
+.sec__animation--left {
+  transform: translate3d(-100px, 0px, 0px);
+}
+.sec__animation--right {
+  transform: translate3d(100px, 0px, 0px);
+}
+.sec__animation-default {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
 }

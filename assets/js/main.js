@@ -1,16 +1,14 @@
 jQuery(document).ready(function ($) {
+    const window_height = $(window).height();
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 600) {
-            //$(".sec-2__img").addClass("sec-2__animation");
-            $(".sec-2__animation").addClass("sec-2__animation-default");
-        }
-        if ($(document).scrollTop() > 1200) {
-            //$(".sec-3__img").addClass("sec-3__animation");
-            $(".sec-3__animation").addClass("sec-3__animation-default");
-        }
-        if ($(document).scrollTop() > 2550) {
-            //$(".h1st").addClass("h1st__animation");
-            $(".h1st__animation").addClass("h1st__animation-default");
-        }
+        const scroll = $(window).scrollTop();
+        const sec = $('.sec__animation');
+        sec.each(function(e){
+            const $this =  $(this);
+            const offset = $this.offset().top;
+            if(scroll >= offset - (window_height * 0.3)){
+                $this.addClass('sec__animation-default');
+            }
+        });
     });
 });

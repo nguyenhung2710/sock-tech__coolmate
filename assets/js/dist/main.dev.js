@@ -1,20 +1,17 @@
 "use strict";
 
 jQuery(document).ready(function ($) {
+  var window_height = $(window).height();
   $(window).scroll(function () {
-    if ($(document).scrollTop() > 600) {
-      //$(".sec-2__img").addClass("sec-2__animation");
-      $(".sec-2__animation").addClass("sec-2__animation-default");
-    }
+    var scroll = $(window).scrollTop();
+    var sec = $('.sec__animation');
+    sec.each(function (e) {
+      var $this = $(this);
+      var offset = $this.offset().top;
 
-    if ($(document).scrollTop() > 1200) {
-      //$(".sec-3__img").addClass("sec-3__animation");
-      $(".sec-3__animation").addClass("sec-3__animation-default");
-    }
-
-    if ($(document).scrollTop() > 2550) {
-      //$(".h1st").addClass("h1st__animation");
-      $(".h1st__animation").addClass("h1st__animation-default");
-    }
+      if (scroll >= offset - window_height * 0.4) {
+        $this.addClass('sec__animation-default');
+      }
+    });
   });
 });

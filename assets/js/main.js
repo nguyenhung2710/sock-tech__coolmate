@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
         sec.each(function(e){
             const $this =  $(this);
             const offset = $this.offset().top;
-            if(scroll >= offset - (window_height * 0.3)){
+            if(scroll >= offset - (window_height * 0.4)){
                 $this.addClass('sec__animation-default');
             }
         });
